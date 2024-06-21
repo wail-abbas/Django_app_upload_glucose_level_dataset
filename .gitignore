@@ -27,5 +27,5 @@ venv/
 .ipynb
 .ipynb_checkpoints
 
-__pycache__
-glucose_level/__pycache__
+__pycache__/
+glucose_level/__pycache__/
