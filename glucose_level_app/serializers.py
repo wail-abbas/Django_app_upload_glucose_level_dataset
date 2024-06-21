@@ -1,14 +1,34 @@
-from django.contrib import admin
+from rest_framework import serializers
 from .models import GlucoseLevel
-
-# Register your models here.
-
-#admin.site.register(GlucoseLevel)
+from core_app.models import User
+from devices_app.models import Devices, UserDevice
 
 
-@admin.register(GlucoseLevel)
-class GlucoseLevelAdmin(admin.ModelAdmin):
-    list_display = ["device",
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["id", "name", "serial_no", "user"]
+
+class DeviceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Devices
+        fields = ["device_type"]
+
+class UserDeviceSerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+    class Meta:
+        model = UserDevice
+        fields = ["serial_number", "device_type", "user"]
+
+
+
+class GlucoseLevelSerializer(serializers.ModelSerializer):
+    #user_device = UserDeviceSerializer()
+
+    class Meta:
+        model = GlucoseLevel
+        fields = [  
+                    "device",
                     "device_timestamp", 
                     "record_type", 
                     "glucose_history_mg_dL", 
@@ -26,4 +46,4 @@ class GlucoseLevelAdmin(admin.ModelAdmin):
                     "mealtime_insulin_units", 
                     "correction_insulin_units", 
                     "user_insulin_change_units"]
-
+        
