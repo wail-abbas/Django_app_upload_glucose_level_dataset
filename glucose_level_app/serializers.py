@@ -16,6 +16,7 @@ class DeviceSerializer(serializers.ModelSerializer):
 
 class UserDeviceSerializer(serializers.ModelSerializer):
     user_id = UserSerializer()
+    device_type = DeviceSerializer()
     class Meta:
         model = UserDevice
         fields = ["serial_number", "device_type", "user_id"]
