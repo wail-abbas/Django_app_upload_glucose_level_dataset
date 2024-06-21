@@ -1,4 +1,4 @@
-<h1 align="center"> AutoBat Web Application </h1>
+<h1 align="center">  Glucose levels </h1>
 
 <h2 id="table-of-contents"> 📋 Table of Contents</h2>
 <details open="open">
