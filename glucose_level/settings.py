@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "core_app",
     "devices_app",
+    "glucose_level_app"
 ]
 
 MIDDLEWARE = [
