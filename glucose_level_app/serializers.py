@@ -7,7 +7,7 @@ from devices_app.models import Devices, UserDevice
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["id", "name", "serial_no", "user"]
+        fields = ["id", "user_abbreviation"]
 
 class DeviceSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,15 +15,15 @@ class DeviceSerializer(serializers.ModelSerializer):
         fields = ["device_type"]
 
 class UserDeviceSerializer(serializers.ModelSerializer):
-    user = UserSerializer()
+    user_id = UserSerializer()
     class Meta:
         model = UserDevice
-        fields = ["serial_number", "device_type", "user"]
+        fields = ["serial_number", "device_type", "user_id"]
 
 
 
 class GlucoseLevelSerializer(serializers.ModelSerializer):
-    #user_device = UserDeviceSerializer()
+    device = UserDeviceSerializer()
 
     class Meta:
         model = GlucoseLevel
@@ -45,5 +45,6 @@ class GlucoseLevelSerializer(serializers.ModelSerializer):
                     "ketone_mmol_L", 
                     "mealtime_insulin_units", 
                     "correction_insulin_units", 
-                    "user_insulin_change_units"]
+                    "user_insulin_change_units",
+                    ]
         
