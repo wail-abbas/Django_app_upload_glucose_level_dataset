@@ -1,0 +1,28 @@
+####
+# Django 
+####
+db.sqlite3
+
+####
+# Environments
+####
+.venv/
+venv/
+
+####
+# DATA
+####
+.csv
+
+
+####
+# VSCODE
+####
+.vscode
+
+
+####
+# NOOTBOOKS
+####
+.ipynb
+.ipynb_checkpoints
