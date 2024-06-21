@@ -5,10 +5,11 @@ from .models import GlucoseLevel
 from .serializers import GlucoseLevelSerializer
 from .filters import GlucoseLevelFilter
 from .pagination import DefaultPagination
+from devices_app.models import Devices, UserDevice
 
 # Create your views here.
 class GlucoseLevelviewSet(ModelViewSet):
-    queryset = GlucoseLevel.objects.all()
+    
     serializer_class = GlucoseLevelSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
     pagination_class = DefaultPagination
@@ -16,11 +17,14 @@ class GlucoseLevelviewSet(ModelViewSet):
     search_fields = ['device', 'device_timestamp']
     ordering_fields = ['device', 'device_timestamp']
     ordering = ['device_timestamp']
+    lookup_field = 'id'
 
     def get_queryset(self):
-        queryset = super().get_queryset()
-        device = self.request.query_params.get('device', None)
-        if device:
-            queryset = queryset.filter(device=device)
-
-
+        queryset = GlucoseLevel.objects.all()
+        user_id = self.request.query_params.get('user_id', None)
+        
+        if user_id:
+            queryset = queryset.filter(device__user_id__user_abbreviation=user_id).select_related('device')
+        
+        return queryset
+    

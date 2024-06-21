@@ -6,7 +6,6 @@ class GlucoseLevelFilter(FilterSet):
   class Meta:
     model = GlucoseLevel
     fields = {
-      'device': ['exact'],
       'device_timestamp': ['gt', 'lt']
     }
 
