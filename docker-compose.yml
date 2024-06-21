@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/django
+    ports:
+      - 8000:8000
+    image: app:django
+    container_name: glucose_level_container
+    command: python manage.py runserver 0.0.0.0:8000

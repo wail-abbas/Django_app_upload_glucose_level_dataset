@@ -5,7 +5,7 @@ from .models import GlucoseLevel
 from .serializers import GlucoseLevelSerializer
 from .filters import GlucoseLevelFilter
 from .pagination import DefaultPagination
-from devices_app.models import Devices, UserDevice
+from rest_framework.response import Response
 
 # Create your views here.
 class GlucoseLevelviewSet(ModelViewSet):
@@ -27,4 +27,3 @@ class GlucoseLevelviewSet(ModelViewSet):
             queryset = queryset.filter(device__user_id__user_abbreviation=user_id).select_related('device')
         
         return queryset
-    
