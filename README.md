@@ -49,7 +49,7 @@
   <li><b>Makemigrations<pre><code>python manage.py makemigrations </code></pre></b></li>
   <li><b>Migrate<pre><code>python manage.py migrate </code></pre></b></li>
   <li><b>Create super user<pre><code>python manage.py createsuperuser </code></pre></b></li>
-  <li><b>Load the sample data into the database<pre><code>python manage.py python manage.py import_data <path/to/sample-data> </code></pre></b></li>
+  <li><b>Load the sample data into the database<pre><code>python manage.py python manage.py import_data <path/to/sample-data-folder> </code></pre></b></li>
   <li><b>Run tests <pre><code> pytest </code></pre></b></li>
   <li><b>Run the app <pre><code>python manage.py runserver </code></pre></b></li>
   <li><b>Open the admin panle in the browser, and add some data<pre><code>http://127.0.0.1:8000/admin </code></pre></b></li>
@@ -80,6 +80,9 @@
 
 <h2 id="further_ideas"> 💡 Further Ideas</h2>
 <ul>
+  <li> Add Users Permissions</li>
+  <li> Store sensitive data in environment variable </li>
+  <li> Generate API documentation using drf spectacular, <b href="https://drf-spectacular.readthedocs.io/en/latest/"> documentation</b></b></li>
   <li><b> Deploy on digitalocean with Kubernetes, <li><b href="https://docs.digitalocean.com/products/kubernetes/"> digitalocean documentation</b></b></li>
   <li><b> Consider a performing testing with locust, <li><b href="https://docs.locust.io/en/stable/"> locust documentation</b></b></li>
   <li><b> Integrate with FreestyleLiber to generate reports directly, <li><b href="https://tryterra.co/integrations/freestylelibre"> here are more information</b></b></li>
