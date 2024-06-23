@@ -82,10 +82,10 @@
 <ul>
   <li> Add Users Permissions</li>
   <li> Store sensitive data in environment variable </li>
-  <li> Generate API documentation using drf spectacular, <a href="https://drf-spectacular.readthedocs.io/en/latest/"> documentation</a></b></li>
-  <li><b> Deploy on digitalocean with Kubernetes, <li><a href="https://docs.digitalocean.com/products/kubernetes/"> digitalocean documentation</a></b></li>
-  <li><b> Consider a performing testing with locust, <li><a href="https://docs.locust.io/en/stable/"> locust documentation</a></b></li>
-  <li><b> Integrate with FreestyleLiber to generate reports directly, <li><a href="https://tryterra.co/integrations/freestylelibre"> here are more information</a></b></li>
+  <li> Generate API documentation using drf spectacular, <a href="https://drf-spectacular.readthedocs.io/en/latest/"> documentation</a></li>
+  <li> Deploy on digitalocean with Kubernetes, <li><a href="https://docs.digitalocean.com/products/kubernetes/"> digitalocean documentation</a></li>
+  <li> Consider a performing testing with locust, <li><a href="https://docs.locust.io/en/stable/"> locust documentation</a></li>
+  <li> Integrate with FreestyleLiber to generate reports directly, <li><a href="https://tryterra.co/integrations/freestylelibre"> here are more information</a></li>
 </ul>
 <br>
 <h2 id="references"> 📚 References</h2>
