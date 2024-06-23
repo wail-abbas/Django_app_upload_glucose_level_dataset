@@ -72,7 +72,6 @@
   <li><b>Descending ordering by user ID:</b></li><pre><code>http://127.0.0.1:8000/api/v1/levels/?ordering=-device__user_id__user_abbreviation</code></pre></b></li>
   <li><b>Ascending ordering by timestamps:</b></li><pre><code>http://127.0.0.1:8000/api/v1/levels/?ordering=device_timestamp</code></pre></b></li>
   <li><b>Descending ordering by timestamps:</b></li><pre><code>http://127.0.0.1:8000/api/v1/levels/?ordering=-device_timestamp</code></pre></b></li>
-  <li><b>Limit the number of glucose levels returned:</b></li><pre><code>jjj </code></pre></b></li>
   <li><b>Search by user ID:</b></li><pre><code>http://127.0.0.1:8000/api/v1/levels/?search=aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa</code></pre></b></li>
   <li><b>Search by timestamps:</b></li><pre><code>http://127.0.0.1:8000/api/v1/levels/?search=2021-02-11</code></pre></b></li>
   <li><b>Retrieve ( GET ) a particular glucose level by id:</b></li><pre><code>http://127.0.0.1:8000/api/v1/levels/2500/</code></pre></b></li>
