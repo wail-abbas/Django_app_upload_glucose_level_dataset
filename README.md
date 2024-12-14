@@ -49,7 +49,7 @@
   <li><b>Makemigrations<pre><code>python manage.py makemigrations </code></pre></b></li>
   <li><b>Migrate<pre><code>python manage.py migrate </code></pre></b></li>
   <li><b>Create super user<pre><code>python manage.py createsuperuser </code></pre></b></li>
-  <li><b>Load the sample data into the database<pre><code>python manage.py python manage.py import_data <path/to/sample-data-folder> </code></pre></b></li>
+  <li><b>Load the sample data into the database<pre><code>python manage.py import_data <path/to/sample-data-folder> </code></pre></b></li>
   <li><b>Run tests <pre><code> pytest </code></pre></b></li>
   <li><b>Run the app <pre><code>python manage.py runserver </code></pre></b></li>
   <li><b>Open the admin panle in the browser, and add some data<pre><code>http://127.0.0.1:8000/admin </code></pre></b></li>
