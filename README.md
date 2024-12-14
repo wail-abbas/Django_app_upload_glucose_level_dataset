@@ -5,6 +5,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#overview"> ➤ Overview</a></li>
+    <li><a href="#data_sets"> ➤ Data Sets</a></li>
     <li><a href="#technologies-used"> ➤ Technologies Used</a></li>
     <li><a href="#setup_and_installation"> ➤ Setup and Installation</a></li>
     <li><a href="#API_usage"> ➤ API Usage </a></li>
@@ -17,6 +18,12 @@
 <h2 id="overview"> 📖 Overview</h2>
 <p align="justify"> 
   This is an API Endpoint developed to upload CSV dataset using managment command and list the records from the database using APIs.
+</p>
+
+<br>
+<h2 id="data_sets"> 📈 Data Sets</h2>
+<p align="justify"> 
+  The data sets used for this application are the glucose levels data exported from FreeStyle LibreLink devices.
 </p>
 
 <br>
