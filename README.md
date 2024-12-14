@@ -1,4 +1,4 @@
-<h1 align="center"> Glucose Levels APIs using Django </h1>
+<h1 align="center"> Exploring Glucose Levels datasets using Django REST framework </h1>
 
 <h2 id="table-of-contents"> 📋 Table of Contents</h2>
 <details open="open">
