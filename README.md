@@ -16,7 +16,7 @@
 <br>
 <h2 id="overview"> 📖 Overview</h2>
 <p align="justify"> 
-  This is an API Endpoint developed to list a glucose levels records from the database.
+  This is an API Endpoint developed to upload CSV dataset using managment command and list the records from the database using APIs.
 </p>
 
 <br>
