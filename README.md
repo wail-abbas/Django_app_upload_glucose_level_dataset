@@ -50,8 +50,8 @@
 <ol>
   <li><b>Create a virtual environment<pre><code>virtualenv venv </code></pre></b></li>
   <li><b>Activate a virtual environment<pre><code>source venv/bin/activate </code></pre></b></li>
-  <li><b>Clone This repository<pre><code>git clone https://github.com/wail-abbas/glucose_level.git</code></pre></b></li>
-  <li><b>Go to the project Directory<pre><code> cd glucose_level</code></pre></b></li>
+  <li><b>Clone This repository<pre><code>git clone https://github.com/wail-abbas/Django_app_upload_glucose_level_dataset.git</code></pre></b></li>
+  <li><b>Go to the project Directory<pre><code> cd Django_app_upload_glucose_level_dataset</code></pre></b></li>
   <li><b>Install requirements<pre><code> pip install -r requirements.txt </code></pre></b></li>
   <li><b>Makemigrations<pre><code>python manage.py makemigrations </code></pre></b></li>
   <li><b>Migrate<pre><code>python manage.py migrate </code></pre></b></li>
